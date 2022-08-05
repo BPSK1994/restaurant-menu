@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+.menu {
+    max-width: 980px;
+    margin: 32px auto 32px auto;
+}
+
+.menu__heading {
+    font-family: 'Catalish Huntera','Kaoly Demo', 'Milestone Free Version Script';
+    font-size: 54px;
+    text-align: center;
+    font-weight: 400;
+    color: gold;
+}
+
+.menu__underline {
+    border-bottom: 3px solid #696969;
+    margin: 12px auto 0 auto;
+}
+
+
+/* buttons */
+
+.btn-container--flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-container {
+    margin-top: 78px;
+    margin-bottom: 68px;
+}
+
+.filter-btn {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    padding: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid #33ff66;
+}
+
+
+
+.filter-btn:hover i {
+    color: #ff6600;
+}
+
+
+.filter-btn i {
+    font-size: 26px;
+}
+
+.filter-btn span {
+    display: inline-block;
+    margin: 16px auto 3px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+
+.item__img {
+    width: 138px;
+    height: 138px;
+    margin-right: 16px;
+}
+
+
+/* menu items */
+
+.menu__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-items: left; */
+    width: 100%;
+    grid-row-gap: 16px;
+}
+
+.item-container {
+    display: flex;
+    margin: 20px 24px;
+}
+
+.item__header {
+    width:60%;
+}
+
+.item__info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.item__heading {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.item__price {
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: end;
+}
+
+.item__text {
+    margin-top: 8px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+

@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styling -->
+    <link rel = "stylesheet" href = "style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/52680bb7c9.js" crossorigin="anonymous"></script>
     <title>Restaurant Menu</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <section class = "menu">
+            <div class="menu__title">
+                <h2 class = "menu__heading">Leeds Fast Food Restaurant</h2>
+                <div class="menu__underline"></div>
+            </div>
+
+            <div class="btn-container btn-container--flex">
+                <button class="filter-btn"><i class = "fa-solid fa-utensils"></i><span>All</span></button>
+                <button class="filter-btn"><i class = "fa-solid fa-pizza-slice"></i><span>Pizza</span></button>
+                <button class="filter-btn"><i class = "fa-solid fa-burger"></i><span>Burgers</span></button>
+                <button class="filter-btn"><i class = "fa-solid fa-cookie-bite"></i><span>Snacks & Sides</span></button>
+                <button class="filter-btn"><i class = "fa-solid fa-carrot"></i><span>Salads</span></button>
+                <button class="filter-btn"><i class = "fa-solid fa-mug-hot"></i><span>Drinks</span></button>
+            </div>
+
+            <div class="menu__items">
+                <!-- item 1 -->
+                <div class="item-container">
+                    <img class = "item__img" src = "images/pepperoni.png" alt = "">
+                    <div class = "item__info">
+                        <header class = "item__header">
+                            <h4 class = "item__heading"></h4>
+                            <p class = "item__text"></p>
+                        </header>
+                        <h4 class = "item__price">£</h4>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </div>       
+<!-- Javascript -->
+<script src = "main.js"></script>    
 </body>
 </html>
