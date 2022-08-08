@@ -114,24 +114,24 @@ const menu = [
     {
         id: 15,
         title: "Coleslaw",
-        price: 1,
-        image: "./images/",
+        price: 1.29,
+        image: "./images/coleslaw.png",
         category: "Salads",
-        description: ""
+        description: "Finely shredded raw cabbage mixed in mayonnaise"
     },
     {
         id: 16,
         title: "Greek Salad",
-        price: 1,
-        image: "./images/",
+        price: 4.99,
+        image: "./images/greek.jpg",
         category: "Salads",
-        description: ""
+        description: "Tomatoes, cucumbers, onion, feta cheese and olives. Dressed with salt, Greek oregano, and olive oil"
     },
     {
         id: 17,
         title: "Tea",
         price: 2.50,
-        image: "./images/tea.png",
+        image: "./images/teanew.png",
         category: "drinks",
         description: "Black/Green/White/Fruit"
     },
@@ -155,8 +155,40 @@ const menu = [
 
 const menuItems = document.querySelector('.menu__items');
 
+const filterBtns = document.querySelectorAll('.filter-btn');
+
+
+// Load items
 window.addEventListener("DOMContentLoaded", function() {
-    let displayMenu = menu.map(function(item) {
+displayItems(menu);
+});
+
+
+// Filter Items
+filterBtns.forEach(function(item) {
+    item.addEventListener('click', function(event) {
+
+        const category = event.currentTarget.dataset.id;
+
+        const menuCategory = menu.filter(function(item) {
+            if(item.category.toLowerCase() == category) {
+                return item;
+            }
+        });
+
+        
+        if(category == "all") {
+            displayItems(menu);
+        } else {
+            displayItems(menuCategory);
+        }
+
+    });
+});
+
+// Passing array into the function
+function displayItems(items) {
+    let displayMenu = items.map(function(item) {
         return `<div class="item-container">
         <img class = "item__img" src = ${item.image} alt = "">
         <div class = "item__info">
@@ -167,8 +199,7 @@ window.addEventListener("DOMContentLoaded", function() {
             <h4 class = "item__price">£ ${item.price}</h4>
         </div>
     </div>`
-    });
-    displayMenu = displayMenu.join('');
-    console.log(displayMenu);
-    menuItems.innerHTML = displayMenu;
 });
+displayMenu = displayMenu.join('');
+menuItems.innerHTML = displayMenu;
+}
