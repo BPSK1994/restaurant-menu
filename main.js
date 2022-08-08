@@ -168,7 +168,7 @@ displayItems(menu);
 filterBtns.forEach(function(item) {
     item.addEventListener('click', function(event) {
 
-        const category = event.currentTarget.dataSet.id;
+        const category = event.currentTarget.dataset.id;
 
         const menuCategory = menu.filter(function(item) {
             if(item.category.toLowerCase() == category) {
