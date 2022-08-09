@@ -30,7 +30,7 @@ body {
 }
 
 
-/* buttons */
+/* Buttons */
 
 .btn-container--flex {
     display: flex;
@@ -54,6 +54,9 @@ body {
     border: 2px solid #33ff66;
 }
 
+.filter-btn i {
+    font-size: 26px;
+}
 
 
 .filter-btn:hover i {
@@ -61,32 +64,19 @@ body {
 }
 
 
-.filter-btn i {
-    font-size: 26px;
-}
-
 .filter-btn span {
-    display: inline-block;
     margin: 16px auto 3px auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 600;
 }
 
 
-.item__img {
-    width: 138px;
-    height: 138px;
-    margin-right: 16px;
-}
 
-
-/* menu items */
+/* Menu Items */
 
 .menu__items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    /* justify-items: left; */
-    width: 100%;
     grid-row-gap: 16px;
 }
 
@@ -99,6 +89,20 @@ body {
     width:60%;
 }
 
+.item__price {
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: end;
+}
+
+.item__img {
+    width: 138px;
+    height: 138px;
+    margin-right: 16px;
+}
+
+
 .item__info {
     display: flex;
     flex-direction: row;
@@ -108,13 +112,6 @@ body {
 .item__heading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
-}
-
-.item__price {
-    width: 40%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-align: end;
 }
 
 .item__text {

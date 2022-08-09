@@ -186,7 +186,7 @@ filterBtns.forEach(function(item) {
     });
 });
 
-// Passing array into the function
+
 function displayItems(items) {
     let displayMenu = items.map(function(item) {
         return `<div class="item-container">
